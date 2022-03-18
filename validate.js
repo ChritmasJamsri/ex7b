@@ -9,10 +9,13 @@ function checkSID() {
 
 function checkCandiNo() {
   let candi = (document.getElementById("candi").value).trim();
-  if (isNaN(candi) || candi < 1) {
-    return false;
-  } else {
-    return true;
+  if (isNaN(candi) & candi < 1)  {
+	 } else {  
+			if (candi > 1 || candi < 10 & candi.length != 0) {
+				return false;
+     } else {
+				return true; 
+	 }
   }
 }
 
